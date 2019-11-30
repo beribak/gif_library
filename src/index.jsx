@@ -5,22 +5,23 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { logger } from 'redux-logger'; 
 import reduxPromise from 'redux-promise';
-
-
 // internal modules
 import App from './components/app';
 import './assets/stylesheets/application.scss';
+// State and reducers
 import inputValueReducer from './reducers/input_value_reducer';
 import gifListReducer from './reducers/gif_list_reducer';
+import trendingGifsReducer from './reducers/trending_gifs_reducer';
 
-// State and reducers
+
 const initialState = {
 	
 }
 
 const reducers = combineReducers({
   inputValue: inputValueReducer,
-  gifList: gifListReducer
+  gifList: gifListReducer,
+  trendingGifs: trendingGifsReducer
 });
 
 const middlewares = applyMiddleware(reduxPromise, logger); 

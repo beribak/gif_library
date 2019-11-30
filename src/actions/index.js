@@ -15,3 +15,13 @@ export function fetchGifs(input) {
 		payload: promise
 	};
 }
+
+export function fetchTrendingGifs() {
+	const promise = fetch(`https://api.giphy.com/v1/gifs/trending&api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=5&rating=G`)
+	.then(response => response.json());
+	
+	return{
+		type: 'FETCH_TRENDING_GIFS',
+		payload: promise
+	};
+}
