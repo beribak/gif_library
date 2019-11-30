@@ -11,6 +11,7 @@ import reduxPromise from 'redux-promise';
 import App from './components/app';
 import './assets/stylesheets/application.scss';
 import inputValueReducer from './reducers/input_value_reducer';
+import gifListReducer from './reducers/gif_list_reducer';
 
 // State and reducers
 const initialState = {
@@ -18,7 +19,8 @@ const initialState = {
 }
 
 const reducers = combineReducers({
-  inputValue: inputValueReducer
+  inputValue: inputValueReducer,
+  gifList: gifListReducer
 });
 
 const middlewares = applyMiddleware(reduxPromise, logger); 
