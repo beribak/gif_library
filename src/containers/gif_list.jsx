@@ -15,7 +15,7 @@ class GifList extends Component {
 
 		if(this.props.gifList === null) {
 			return(
-				<h2 className="waiting">Waiting for your search keyword</h2>
+				<h2 className="waiting"></h2>
 			);
 		} else {
 			return(	
