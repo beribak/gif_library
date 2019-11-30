@@ -15,7 +15,7 @@ import gifListReducer from './reducers/gif_list_reducer';
 
 // State and reducers
 const initialState = {
-
+	
 }
 
 const reducers = combineReducers({

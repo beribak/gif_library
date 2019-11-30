@@ -3,11 +3,13 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { fetchInput } from '../actions';
+import { fetchGifs } from '../actions';
 
 class SearchBar extends Component {
 
 	handleChange = (event) => {
-		this.props.fetchInput(event.target.value)
+		this.props.fetchInput(event.target.value);
+		this.props.fetchGifs(event.target.value);
 	}
 
 	render() {
@@ -22,7 +24,7 @@ class SearchBar extends Component {
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators(
-		{ fetchInput },
+		{ fetchInput, fetchGifs },
 		dispatch
 	);
 }
