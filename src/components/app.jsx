@@ -11,8 +11,8 @@ const App = () => {
   return (
     <div className="app">
       <SearchBar />
-      <GifList />
       <Carousell />
+      <GifList />
     </div>
   );
 };

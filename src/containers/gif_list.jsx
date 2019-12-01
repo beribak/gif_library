@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { fetchInput } from '../actions';
-import Carousell from './carousell';
+// import Carousell from './carousell';
 import Gif from './gif';
 
 class GifList extends Component {
@@ -12,7 +12,7 @@ class GifList extends Component {
 
 		if(this.props.gifList === null) {
 			return(
-				<h2 className="waiting">Search for gifs</h2>
+				<h2 className="waiting"> </h2>
 				// <Carousell />
 			);
 		} else {
