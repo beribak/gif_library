@@ -1,9 +1,10 @@
-{
+{ "homepage": "https://beribak.github.io/gif_library",
   "name": "gif_library",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -15,6 +16,8 @@
     "redux-promise": "^0.6.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
