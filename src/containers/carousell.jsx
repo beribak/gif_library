@@ -9,26 +9,32 @@ import { fetchTrendingGifs } from '../actions';
 
 class Carousell extends Component {
 	
-	componentWillMount() {
+	componentDidMount() {
 		this.props.fetchTrendingGifs();
 	}
 
 	render() {
-
-			return(
+			if(this.props.trendingGifs) {
+				const trendingGifs = this.props.trendingGifs.data; 
+				return(
 				<Carousel className="carousel">
-					{ this.props.trendingGifs.data.map( gif => 
-				  	<Carousel.Item>
-			    		<img
-				      	className="gifImg"
-				      	src={`https://media.giphy.com/media/${gif.id}/giphy.gif`}
-				      	alt="First slide"
-				    	/>    
-				  	</Carousel.Item>
-				  	)
-				  	}
+				 {trendingGifs.map( gif => 
+					  	<Carousel.Item>
+				    		<img
+					      	className="gifImg"
+					      	src={`https://media.giphy.com/media/${gif.id}/giphy.gif`}
+					      	alt="First slide"
+					    	/>    
+					  	</Carousel.Item>
+					  	
+					)}
 				</Carousel>
-			);	
+				);
+			} else {
+				return(
+					<h2>Loading</h2>
+				);
+			}	
 	}
 }
 

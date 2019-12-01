@@ -7,7 +7,7 @@ const Gif = (props) => {
     	
     	return(
 	    	<div className="">
-	     		<img src={`https://media.giphy.com/media/${props.id}/giphy.gif`} className="gif" />
+	     		<img src={`https://media.giphy.com/media/${props.id}/giphy.gif`} alt="Loading" className="gif" />
 	    	</div>
     	);
 

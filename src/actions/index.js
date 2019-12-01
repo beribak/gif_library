@@ -17,7 +17,7 @@ export function fetchGifs(input) {
 }
 
 export function fetchTrendingGifs() {
-	const promise = fetch(`https://api.giphy.com/v1/gifs/trending&api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=5&rating=G`)
+	const promise = fetch("https://api.giphy.com/v1/gifs/trending?api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=5&rating=G")
 	.then(response => response.json());
 	
 	return{
