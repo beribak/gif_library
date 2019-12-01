@@ -10,9 +10,9 @@ import Carousell from '../containers/carousell';
 const App = () => {
   return (
     <div className="app">
-      <Carousell />
       <SearchBar />
       <GifList />
+      <Carousell />
     </div>
   );
 };

@@ -17,18 +17,21 @@ class Carousell extends Component {
 			if(this.props.trendingGifs) {
 				const trendingGifs = this.props.trendingGifs.data; 
 				return(
-				<Carousel className="carousel">
-				 {trendingGifs.map( gif => 
-					  	<Carousel.Item>
-				    		<img
-					      	className="gifImg"
-					      	src={`https://media.giphy.com/media/${gif.id}/giphy.gif`}
-					      	alt="First slide"
-					    	/>    
-					  	</Carousel.Item>
-					  	
-					)}
-				</Carousel>
+				<div>
+					<p className="trending_header">Trending Gifs</p>	
+					<Carousel className="carousel">
+					 {trendingGifs.map( gif => 
+						  	<Carousel.Item>
+					    		<img
+						      	className="gifImg"
+						      	src={`https://media.giphy.com/media/${gif.id}/giphy.gif`}
+						      	alt="First slide"
+						    	/>    
+						  	</Carousel.Item>
+						  	
+						)}
+					</Carousel>
+				</div>
 				);
 			} else {
 				return(

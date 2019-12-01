@@ -1,10 +1,20 @@
 .carousel {
-	width: 80vw;
-	padding-top: 30px;
+	width: 97vw;
+	margin-bottom: 30px;
+	border: 20px solid rgb(139, 36, 150);
+	// padding-bottom: 30px;
 	// height: 50px;
 	margin: auto;
 }
 
 .gifImg {
-	width: 80vw;
+	width: 100vw;
+	height: 60vh;
+	object-fit: cover;
+}
+
+.trending_header {
+	padding-left: 10px;
+	color: white; 		;
+	margin-bottom: 0px;
 }
