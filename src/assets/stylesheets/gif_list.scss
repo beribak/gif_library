@@ -1,6 +1,17 @@
 .gif_list_container {
 	text-align: center;
+	padding: 15px;
 	margin-top: 30px;
+	margin: auto;
+	// display: grid;
+	// grid-template-columns: 1fr 1fr;
+	// grid-template-rows: min-content;
+	// grid-auto-rows: max( 200px);
+	// grid-auto-flow: row;
+	display: flex;
+  	flex-wrap: wrap;
+  	// height: 200px;
+	// flex-wrap: wrap;
 	// height-min: 100vh; 
 }
 

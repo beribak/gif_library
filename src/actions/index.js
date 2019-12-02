@@ -25,3 +25,13 @@ export function fetchTrendingGifs() {
 		payload: promise
 	};
 }
+
+export function fetchSportsGifs() {
+	const promise = fetch("https://api.giphy.com/v1/gifs/search?q=sports&api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=25&rating=G")
+	.then(response => response.json());
+	
+	return{
+		type: 'FETCH_SPORTS_GIFS',
+		payload: promise
+	};
+}

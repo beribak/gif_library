@@ -8,11 +8,32 @@
 	background-color: rgba(20, 20, 20, 1);
 	// padding: 30px;
 
-	h4 {
-		text-align: left;
-		color: white;
-		padding-top: 5px;
-		padding-left: 10px;
+
+	.navigation {
+		padding: 5px;
+		display: flex;
+		justify-content: space-between;
+		
+		h4 {
+			text-align: left;
+			color: white;
+			padding-top: 5px;
+			padding-left: 10px;
+		}
+
+		.left {
+			padding: 3px;
+			// margin: 3px;
+			.button {
+				margin-left: 10px;
+				// line-height: 0px;
+				// padding: 3px;
+				// margin: 0px;
+				// color: white;
+				// border: 1px solid white;
+			}			
+		}
+
 	}
 
 	.bar_container {
