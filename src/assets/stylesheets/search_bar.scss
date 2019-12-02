@@ -15,19 +15,23 @@
 		padding-left: 10px;
 	}
 
-	.search {
-		font-size: 28px;
-		color: white;
-		// background-color: white;
-		padding-right: 10px;
-	}
+	.bar_container {
+		display: flex;
+	 
+		.search {
+			font-size: 28px;
+			color: white;
+			// background-color: white;
+			padding: 5px 10px 10px 10px;
+		}
 
-	.search_bar {
-		text-align: center;
-		background-color: white;
-		color: grey;
-		font-size: 28px;
-		height: 40px;
-		width: 96vw;
+		.search_bar {
+			text-align: center;
+			background-color: white;
+			color: grey;
+			font-size: 28px;
+			height: 40px;
+			width: 86vw;
+		}
 	}
 }
