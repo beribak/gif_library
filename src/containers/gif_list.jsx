@@ -19,10 +19,20 @@ class GifList extends Component {
 			return(	
 				<div className="gif_list_container" id="gif_list_id">
 					<div>
-						{this.props.gifList.data.map((gif, index) => {if (index < 12 ){return <Gif id={gif.id} key={gif.id} />}})}
+						{this.props.gifList.data.map((gif, index) => {
+								if (index < 12 ){
+									return <Gif id={gif.id} key={gif.id} />
+								}
+							})
+						}
 					</div>
-					<div>
-						{this.props.gifList.data.map((gif, index) => {if (index > 11 ){return <Gif id={gif.id} key={gif.id} />}})}
+					<div className="ml-1">
+						{this.props.gifList.data.map((gif, index) => {
+								if (index > 11 ){
+									return <Gif id={gif.id} key={gif.id} />
+								}
+							})
+						}
 					</div>	
 				</div>				
 			);
