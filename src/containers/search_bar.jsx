@@ -24,7 +24,7 @@ class SearchBar extends Component {
 				<div className="navigation">
 					<h4>GIF Library</h4>
 					<div className="left">
-						<div className="btn btn-sm btn-outline-primary button" onClick={this.handleClick} >Trending</div>
+						<div className="btn btn-md btn-outline-primary button" onClick={this.handleClick} >Trending</div>
 					</div>
 				</div>
 				<div className="bar_container">

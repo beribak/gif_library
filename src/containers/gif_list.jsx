@@ -26,7 +26,7 @@ class GifList extends Component {
 							})
 						}
 					</div>
-					<div className="ml-1">
+					<div className="">
 						{this.props.gifList.data.map((gif, index) => {
 								if (index % 2 !== 0 ){
 									return <Gif id={gif.id} key={gif.id} />

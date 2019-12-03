@@ -4,12 +4,12 @@
 @import 'carousel.scss';
 
 body {
-  font-family: Helvetica;
+  font-family: 'Raleway', sans-serif;
 }
 .app {
   // margin-top: 20px;
-  // margin-bottom: 20px;
-  background-color: rgba(26, 144, 171, 1);
+  padding-bottom: 30px;
+  background-color: rgba(2, 133, 151, 1);
   min-height: 100vh;
 }
 
