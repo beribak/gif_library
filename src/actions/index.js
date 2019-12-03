@@ -17,7 +17,7 @@ export function fetchGifs(input) {
 }
 
 export function fetchTrendingGifs() {
-	const promise = fetch("https://api.giphy.com/v1/gifs/trending?api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=10&rating=G")
+	const promise = fetch("https://api.giphy.com/v1/gifs/trending?api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=40&rating=G")
 	.then(response => response.json());
 	
 	return{
@@ -27,7 +27,7 @@ export function fetchTrendingGifs() {
 }
 
 export function fetchSportsGifs() {
-	const promise = fetch("https://api.giphy.com/v1/gifs/search?q=sports&api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=25&rating=G")
+	const promise = fetch("https://api.giphy.com/v1/gifs/search?q=trending&api_key=CuBjwgU0RjWbsxzewisHRPN0YA3PU0bL&limit=25&rating=G")
 	.then(response => response.json());
 	
 	return{

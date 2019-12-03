@@ -20,7 +20,7 @@ class GifList extends Component {
 				<div className="gif_list_container" id="gif_list_id">
 					<div>
 						{this.props.gifList.data.map((gif, index) => {
-								if (index < 12 ){
+								if (index % 2 === 0 ){
 									return <Gif id={gif.id} key={gif.id} />
 								}
 							})
@@ -28,7 +28,7 @@ class GifList extends Component {
 					</div>
 					<div className="ml-1">
 						{this.props.gifList.data.map((gif, index) => {
-								if (index > 11 ){
+								if (index % 2 !== 0 ){
 									return <Gif id={gif.id} key={gif.id} />
 								}
 							})

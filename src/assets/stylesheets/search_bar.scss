@@ -15,11 +15,17 @@
 		justify-content: space-between;
 		
 		h4 {
-			text-align: left;
-			color: white;
-			padding-top: 5px;
-			padding-left: 10px;
+			font-weight: bold;
+			border: 3px solid rgba(118, 0, 245, 1);
+			// text-align: left;
+			// color: white;
+			padding: 5px 10px;
+			background: linear-gradient(to right, rgba(238, 23, 37, 1), purple, rgba(23, 126, 238, 1));
+		    background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    margin: 0;
 		}
+		
 
 		.left {
 			padding: 3px;
@@ -38,6 +44,7 @@
 
 	.bar_container {
 		display: flex;
+		margin-top: 7px;
 	 
 		.search {
 			font-size: 28px;

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { fetchInput } from '../actions';
 import { fetchGifs } from '../actions';
-import { fetchSportsGifs } from '../actions';
+import { fetchTrendingGifs } from '../actions';
 
 class SearchBar extends Component {
 
@@ -14,7 +14,7 @@ class SearchBar extends Component {
 	}
 
 	handleClick = (event) => {
-		this.props.fetchSportsGifs();	
+		this.props.fetchTrendingGifs();	
 	}
 
 	render() {
@@ -24,8 +24,7 @@ class SearchBar extends Component {
 				<div className="navigation">
 					<h4>GIF Library</h4>
 					<div className="left">
-						<div className="btn btn-sm btn-outline-primary button" onClick={this.handleClick} >Sports</div>
-						<div className="btn btn-sm btn-outline-info button">Cats</div>
+						<div className="btn btn-sm btn-outline-primary button" onClick={this.handleClick} >Trending</div>
 					</div>
 				</div>
 				<div className="bar_container">
@@ -39,7 +38,7 @@ class SearchBar extends Component {
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators(
-		{ fetchInput, fetchGifs, fetchSportsGifs },
+		{ fetchInput, fetchGifs, fetchTrendingGifs },
 		dispatch
 	);
 }
