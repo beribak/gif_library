@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/gif_library/static/css/main.3eb8cee5.chunk.css",
+    "main.css": "/gif_library/static/css/main.326d7a8c.chunk.css",
     "main.js": "/gif_library/static/js/main.4996b2f1.chunk.js",
     "main.js.map": "/gif_library/static/js/main.4996b2f1.chunk.js.map",
     "runtime-main.js": "/gif_library/static/js/runtime-main.ac5e8edc.js",
@@ -8,14 +8,14 @@
     "static/js/2.79694f56.chunk.js": "/gif_library/static/js/2.79694f56.chunk.js",
     "static/js/2.79694f56.chunk.js.map": "/gif_library/static/js/2.79694f56.chunk.js.map",
     "index.html": "/gif_library/index.html",
-    "precache-manifest.5b9e8c5ef3270acc2d6d06d2ab5498d2.js": "/gif_library/precache-manifest.5b9e8c5ef3270acc2d6d06d2ab5498d2.js",
+    "precache-manifest.fc2bcc27c823437a70bde6f708a4d457.js": "/gif_library/precache-manifest.fc2bcc27c823437a70bde6f708a4d457.js",
     "service-worker.js": "/gif_library/service-worker.js",
-    "static/css/main.3eb8cee5.chunk.css.map": "/gif_library/static/css/main.3eb8cee5.chunk.css.map"
+    "static/css/main.326d7a8c.chunk.css.map": "/gif_library/static/css/main.326d7a8c.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.ac5e8edc.js",
     "static/js/2.79694f56.chunk.js",
-    "static/css/main.3eb8cee5.chunk.css",
+    "static/css/main.326d7a8c.chunk.css",
     "static/js/main.4996b2f1.chunk.js"
   ]
 }
